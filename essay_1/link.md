@@ -1,0 +1,1 @@
+Link to [essay](https://docs.google.com/document/d/1vyqvrG-7-fiwhzg36-eQF5HVtHpQ3sHl5U4gwhsGZ04/edit?usp=sharing)
