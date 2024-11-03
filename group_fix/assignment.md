@@ -1,0 +1,4 @@
+Link to our pull request: https://github.com/Qiskit/rustworkx/pull/1306
+The fix involved adding degree centrality support to the rustworkx library. It included a new function `degree_centrality` in the `centrality` module, as well as adding the necessary Python bindings and the appropriate tests. We made an attempt to make the function more general by allowing directed graphs as well as weighted graphs, however there were some type issues that we were not able to resolve, though we did bring this up in the pull request. The function itself is not complex, it was slightly challenging to get the types to work out correctly. 
+
+Contrubutions were made by Ons, Malik, and myself.
