@@ -1,0 +1,55 @@
+# Kinode Binary Build From Source:
+
+## 1. Setup
+
+```bash
+# Clone the repo.
+
+git clone git@github.com:kinode-dao/kinode.git
+
+# Install Rust and some `cargo` tools so we can build the runtime and Wasm.
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install wasm-tools
+rustup install nightly
+rustup target add wasm32-wasip1 --toolchain nightly
+cargo install cargo-wasi
+
+# Install NPM so we can build frontends for "distro" packages.
+# https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+# If you want to skip this step, build the packages with `cargo run -p build_packages -- --skip-build-frontend` to neglect building the frontends
+
+# Build the "distro" Wasm modules, then, build the runtime.
+# The compiled packages will be at `kinode/target/packages.zip`.
+# The compiled binary will be at `kinode/target/debug/kinode`.
+# OPTIONAL: --release flag (slower build; faster runtime; binary at `kinode/target/release/kinode`).
+```
+
+# Steps to build the binary:
+```bash
+cd kinode
+cargo run -p build_packages
+cargo build -p kinode
+```
+
+# Proposed changes:
+I have only had the opportunity to use this binary as a part of my job, so I thought it would be interesting to make
+changes to the source code and see how the binary actually works. For this assignment, I changed the output shown when the binary
+is run.
+
+So, we go from this:
+
+![Screenshot of original Kinode binary output](../../assets/src1.png)
+
+To this:
+
+![Screenshot of modified Kinode binary output](../../assets/src2.png)
+
+I also added thwqe binary in this folder, so you can run it yourself. Create ad empty directory, and run `./kinode {directory}` to run the binary. (Unzip the file first.)
+
+
+
+
+
+
+
