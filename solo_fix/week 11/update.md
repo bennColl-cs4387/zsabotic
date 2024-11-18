@@ -1,0 +1,1 @@
+Merged pull request [#1306](https://github.com/Qiskit/rustworkx/pull/1306). Combined the group work with the personal work and wrapped up the whole pull request. Now supports the `in_degree` and `out_degree` methods, and the function is generic over PyGraph and PyDiGraph.
