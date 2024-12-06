@@ -15,7 +15,7 @@ practices. As our teacher says, programming is a collaborative discipline, and t
 - 
 
 # Group Fix
-For this group fix, I worked with Ons, Malik, and Michael to add degree centrality support to the rustworkx library. I personally found joy in being able to take the lead on this project, as I was the one with most experience in Rust, so we were able to parse the codebase and understand the necessary changes. This PR only included basic function and and the bindings, and I later added in-degree and out-degree centrality support to the library.
+For this group fix, I worked with Ons, Malik, and Michael to add degree centrality support to the rustworkx library. I personally found joy in being able to take the lead on this project, as I was the one with most experience in Rust, so we were able to parse the codebase and understand the necessary changes. This PR only included basic function and and the bindings, and I later added in-degree and out-degree centrality support to the function.
 - Group fix: degree centrality feature for RustworkX: PR [#1306](https://github.com/Qiskit/rustworkx/pull/1306)
 
 # Essay
